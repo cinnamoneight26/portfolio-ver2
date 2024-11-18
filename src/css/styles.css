@@ -2,7 +2,7 @@ body {
     font-family: Montserrat, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: rgb(108, 76, 64);
-    color: lightgray;
+    color: white;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -121,7 +121,7 @@ li {
 }
 
 .c-lightgray {
-    color: lightgray;
+    color: white;
 }
 
 .aboutContents,
