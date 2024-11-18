@@ -1,0 +1,384 @@
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(108, 76, 64);
+    color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+label {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #FF5757;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 25px;
+    padding: 0px 10px;
+    border: none;
+    margin: 5px;
+    font-weight: bold;
+}
+
+ul {
+    padding-right: 10px;
+}
+
+li {
+    color: white;
+}
+
+.listHandle {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 24px;
+}
+
+.btnActive {
+    background-color: white;
+    color: #FF5757;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    min-width: 300px;
+    overflow: overlay;
+    padding: 0 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left-section>div,
+.right-section>div {
+    overflow: hidden;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.p-lr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p-tb5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.bgc {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bdr5 {
+    border-radius: 5px;
+}
+
+.fs083 {
+    font-size: 0.83rem;
+}
+
+.c-lightgray {
+    color: lightgray;
+}
+
+.aboutContents,
+.skillsContents,
+.educationContents,
+.studiesContents,
+.connectContents,
+.experienceContents,
+.projectsContents {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.experienceContents .workTitle {
+    display: flex;
+    align-items: center;
+}
+
+.experienceContents .workTitle img {
+    margin-right: 5px;
+}
+
+.experienceContents>ul {
+    list-style: none;
+}
+
+.connectContents>ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0px;
+}
+
+.connectContents img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: -4px 5px;
+}
+
+.connectContents li {
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+
+.connectContents li:nth-last-child() {
+    margin-bottom: 0px;
+}
+
+.experienceContents>ul>li {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
+
+#noneTypeLiStyle {
+    opacity: 0;
+    margin-bottom: 0px !important;
+    transform: translateY(10px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* 애니메이션 이후: 불투명하고 원래 위치로 이동 */
+#noneTypeLiStyle.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.experienceContents>ul>li:last-child,
+#noneTypeLiStyle {
+    /* color: blanchedalmond; */
+    color: white;
+    padding-bottom: 0px !important;
+    border-bottom: none !important;
+}
+
+.titleStyle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.titleStyle>img {
+    margin-right: 5px;
+}
+
+.connectContents a span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.toast {
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    font-weight: bold;
+    right: calc(50% - 100px);
+    background-color: #FF5757;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.checkboxWrap {
+    margin: 5px 16px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.checkboxWrap input[type="checkbox"] {
+    display: none;
+}
+
+/* 사용자 정의 체크박스 스타일 */
+.checkboxWrap label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+/* 사용자 정의 체크박스 */
+.checkboxWrap label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF5757;
+    background-color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* 체크박스가 선택되었을 때 */
+.checkboxWrap input[type="checkbox"]:checked+label::before {
+    background-color: #FF5757;
+    border-color: #FF5757;
+}
+
+/* 체크박스 내부에 체크 표시 */
+.checkboxWrap input[type="checkbox"]:checked+label::after {
+    content: '✔';
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+/* 체크박스를 hover했을 때 스타일 */
+.checkboxWrap label:hover::before {
+    border-color: #FF5757;
+}
+
+.projectsContents ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.projectListWrap {
+    display: flex;
+    gap: 10px;
+}
+
+.projectImg img {
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+}
+
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {}
+
+@media all and (max-width: 831px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+    }
+}
+
+@media all and (max-width: 767px) {
+    ul {
+        padding-left: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: max-content;
+        overflow: auto;
+    }
+
+    .left-section,
+    .right-section {
+        flex: 1;
+        width: 100%;
+        min-width: 300px;
+        overflow: overlay;
+        padding: 0px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .connectContents>ul {
+        padding: 15px 0;
+    }
+
+    .checkboxWrap {
+        margin: 10px 0px;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .checkboxWrap {
+        margin: 10px 0px;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+        .checkboxWrap label {
+                margin-right: 10px;
+        }
+    .experienceContents > ul {
+        padding-left: 0px;
+    }
+        .projectsContents ul {
+            padding-left: 0px;
+        }
+}
+
+@media all and (min-width: 768px) {
+}
