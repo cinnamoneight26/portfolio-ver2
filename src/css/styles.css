@@ -300,7 +300,20 @@ li {
 .checkboxWrap label:hover::before {
     border-color: #FF5757;
 }
-
+.checkboxWrap input[type="checkbox"]:checked+label::after {
+    content: '✔';
+    position: absolute;
+    left: 5px;
+    /* 조정 */
+    top: 4px;
+    /* 조정 */
+    color: white;
+    font-size: 14px;
+}
+.checkboxWrap input[type="checkbox"] {
+    display: none;
+    -webkit-appearance: none;
+}
 .projectsContents ul {
     list-style-type: none;
     padding-left: 30px;
