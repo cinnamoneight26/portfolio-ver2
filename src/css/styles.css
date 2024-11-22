@@ -321,6 +321,7 @@ li {
     width: 150px;
     height: 90px;
     cursor: pointer;
+    object-fit: cover;
 }
 
 
