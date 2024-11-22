@@ -51,21 +51,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 콘텐츠 가시성을 전환하는 함수
   function toggleContent(key: keyof Sections) {
+    console.log("toggleContent");
     const { content, button, isOpen } = contentsMap[key];
     const contentElement = document.getElementById(content);
     const buttonElement = document.getElementById(button);
+
     if (contentElement && buttonElement) {
       contentsMap[key].isOpen = !isOpen;
       contentElement.style.maxHeight = contentsMap[key].isOpen
         ? `${contentElement.scrollHeight}px`
         : "0";
+
+      // button 내의 img 요소 가져오기
       const buttonImage = buttonElement.querySelector(
         "img"
       ) as HTMLImageElement | null;
+
       if (buttonImage) {
+        // 이미지 src 업데이트
         buttonImage.src = contentsMap[key].isOpen
           ? "./src/images/svg/circle_up.svg"
           : "./src/images/svg/circle_down.svg";
+
+        // alt 속성 업데이트
+        buttonImage.alt = contentsMap[key].isOpen ? "close icon" : "open icon";
+
+        // 콘솔로 alt 값 디버깅 (문제 파악용)
+        console.log("Updated alt:", buttonImage.alt);
       }
     }
   }

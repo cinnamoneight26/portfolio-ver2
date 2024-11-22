@@ -278,6 +278,10 @@ li {
     background-color: white;
     border-radius: 4px;
     transition: all 0.3s ease;
+        line-height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 /* 체크박스가 선택되었을 때 */
@@ -286,33 +290,22 @@ li {
     border-color: #FF5757;
 }
 
-/* 체크박스 내부에 체크 표시 */
 .checkboxWrap input[type="checkbox"]:checked+label::after {
     content: '✔';
     position: absolute;
-    left: 6px;
-    top: 5px;
-    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     font-size: 14px;
 }
-
 /* 체크박스를 hover했을 때 스타일 */
 .checkboxWrap label:hover::before {
     border-color: #FF5757;
 }
-.checkboxWrap input[type="checkbox"]:checked+label::after {
-    content: '✔';
-    position: absolute;
-    left: 5px;
-    /* 조정 */
-    top: 4px;
-    /* 조정 */
-    color: white;
-    font-size: 14px;
-}
 .checkboxWrap input[type="checkbox"] {
     display: none;
     -webkit-appearance: none;
+    appearance: none;
 }
 .projectsContents ul {
     list-style-type: none;
