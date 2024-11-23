@@ -98,7 +98,9 @@ li {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+.pl30 {
+    padding-left: 30px;
+}
 .p-tb5 {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -119,11 +121,9 @@ li {
 .fs083 {
     font-size: 0.83rem;
 }
-
-.c-lightgray {
-    color: white;
+.mt0 {
+    margin-top: 0px;
 }
-
 .aboutContents,
 .skillsContents,
 .educationContents,
@@ -178,7 +178,10 @@ li {
     padding-bottom: 20px;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
 }
-
+.projectsContents>ul>li {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
 #noneTypeLiStyle {
     opacity: 0;
     margin-bottom: 0px !important;
@@ -249,63 +252,8 @@ li {
     align-items: center;
     box-sizing: border-box;
 }
-
 .checkboxWrap input[type="checkbox"] {
-    display: none;
-}
-
-/* 사용자 정의 체크박스 스타일 */
-.checkboxWrap label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 20px;
-    height: 26px;
-    display: flex;
-    align-items: center;
-}
-
-/* 사용자 정의 체크박스 */
-.checkboxWrap label::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #FF5757;
-    background-color: white;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-        line-height: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-/* 체크박스가 선택되었을 때 */
-.checkboxWrap input[type="checkbox"]:checked+label::before {
-    background-color: #FF5757;
-    border-color: #FF5757;
-}
-
-.checkboxWrap input[type="checkbox"]:checked+label::after {
-    content: '✔';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-}
-/* 체크박스를 hover했을 때 스타일 */
-.checkboxWrap label:hover::before {
-    border-color: #FF5757;
-}
-.checkboxWrap input[type="checkbox"] {
-    display: none;
-    -webkit-appearance: none;
-    appearance: none;
+    accent-color: #ff5722;
 }
 .projectsContents ul {
     list-style-type: none;
@@ -324,7 +272,15 @@ li {
     object-fit: cover;
 }
 
-
+.projectDescript strong {
+    display: flex;
+    align-items: center;
+}
+.projectDescript strong img {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
 /* 태블릿용 CSS */
 @media all and (min-width:768px) {}
 
@@ -368,17 +324,6 @@ li {
         align-items: center;
         box-sizing: border-box;
     }
-
-    .checkboxWrap {
-        margin: 10px 0px;
-        height: max-content;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-    }
-        .checkboxWrap label {
-                margin-right: 10px;
-        }
     .experienceContents > ul {
         padding-left: 0px;
     }
