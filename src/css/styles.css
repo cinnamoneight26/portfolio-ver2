@@ -15,7 +15,9 @@ body {
 label {
     cursor: pointer;
 }
-
+h2 { 
+    font-size: 1.175rem;
+}
 h1,
 h2,
 h3,
