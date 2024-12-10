@@ -225,6 +225,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function updateProjectLinks() {
+    const projectLinks = document.querySelectorAll(".projectTitle a");
+    projectLinks.forEach((link) => {
+      if (window.innerWidth < 768) {
+        // 작은 화면일 경우
+        const img = link.querySelector("img");
+        if (img) {
+          img.src = "./src/images/svg/mobile_off.svg"; // 새 아이콘
+          img.alt = "Notice icon";
+        }
+        link.addEventListener("click", (e) => {
+          e.preventDefault(); // 링크 열기를 막음
+          showMobileNotice();
+        });
+      }
+    });
+  }
+
+  function showMobileNotice() {
+    const toast = document.getElementById("toast");
+    if (toast) {
+      toast.textContent = "이 사이트는 데스크톱 환경에서만 열 수 있습니다.";
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 3000);
+    }
+  }
   // 리사이징 이벤트 처리 함수
   function handleResize() {
     initializeSections();
@@ -232,14 +258,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 리사이즈 이벤트 리스너 추가
   window.addEventListener("resize", handleResize);
+  window.addEventListener("resize", updateProjectLinks);
 
-  /**
-   * TO DO
-   */
-
-  // 초기화 함수 호출
   initializeSections();
   initializeCheckboxes();
   experienceFilter();
   updateExperienceLabels();
+  updateProjectLinks();
 });

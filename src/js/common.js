@@ -194,15 +194,55 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  function updateProjectLinks() {
+  var projectLinks = document.querySelectorAll(".projectTitle a");
+  projectLinks.forEach(function (link) {
+    var isMobileFriendly = link.dataset.mobileFriendly === "true";
+
+    // 작은 화면이고 모바일 친화적이지 않은 사이트인 경우
+    if (window.innerWidth < 768 && !isMobileFriendly) {
+      var img = link.querySelector("img");
+      if (img) {
+        img.src = "./src/images/svg/mobile_off.svg"; // 새 아이콘
+        img.alt = "Notice icon";
+      }
+      // 기존 이벤트 제거하고 새로운 이벤트 추가
+      link.onclick = function (e) {
+        e.preventDefault(); // 링크 열기 막기
+        showMobileNotice(); // 토스트 메시지 표시
+      };
+    } else {
+      // PC 환경이거나 모바일 친화적인 사이트인 경우
+      link.onclick = function () {
+        window.open(link.href, "_blank");
+      };
+    }
+  });
+}
+
+
+  function showMobileNotice() {
+  var toast = document.getElementById("toast");
+  if (toast) {
+    toast.textContent = "This site can only be accessed on desktop devices.";
+    toast.classList.add("show");
+    setTimeout(function () {
+      toast.classList.remove("show");
+    }, 3000);
+  }
+}
+
+  // 리사이징 이벤트 처리 함수
   function handleResize() {
     initializeSections();
+    updateProjectLinks();
   }
+  // 리사이즈 이벤트 리스너 추가
   window.addEventListener("resize", handleResize);
-  window.addEventListener("load", function () {
-    initializeSections();
-  });
+
   initializeSections();
   initializeCheckboxes();
   experienceFilter();
   updateExperienceLabels();
+  updateProjectLinks();
 });
