@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./src/css/fonts.css" media="all">
     <link rel="stylesheet" type="text/css" href="./src/css/styles.css" media="all">
     <script type="text/javascript" src="./src/js/common.js" defer></script>
+    <script type="text/javascript" src="./src/js/lang.js" defer></script>
     <link rel="preload" href="./src/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
         type="font/woff2" crossorigin="anonymous">
 </head>
@@ -16,8 +17,17 @@
     <main class="container">
         <section class="left-section">
             <div>
-                <h1>Minhee Kim</h1>
-                <h2>Senior Frontend Engineer</h2>
+                <div class="titleWrap">
+                    <h1>Minhee Kim</h1>
+                    <div class="langWrap">
+                        <label class="lang-switch">
+                            <input type="checkbox" id="langToggle" />
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <h2>Frontend Engineer</h2>
+
                 <hr />
                 <article class="aboutWrap">
                     <h3>
@@ -25,35 +35,6 @@
                                 height="24" alt="close icon">About</div>
                     </h3>
                     <div class="bgc bdr5 p-tb5 p-lr10 aboutContents" id="aboutContents">
-                        <p>I am a front-end engineer with a strong foundation in creating dynamic and user-friendly
-                            applications
-                            across a range of
-                            industries. My background includes working with educational partners to develop e-textbook
-                            viewers
-                            and interactive
-                            web-based learning tools tailored to enhance user engagement in online education.
-                            Additionally,
-                            I
-                            have experience at an
-                            ETL tool development company, where I contributed to building a website designed to
-                            streamline
-                            data
-                            migration
-                            configuration, making complex processes accessible to users with varying technical
-                            expertise. My
-                            work is driven by a
-                            commitment to crafting intuitive, high-performing interfaces that simplify complex tasks.
-                        </p>
-
-                        <p>I believe that every digital interface should feel like an extension of the user's
-                            personal space, designed to be both functional and inspiring.</p>
-
-                        <p>Currently based in St. Louis, Missouri, I am excited to continue creating, learning, and
-                            growing
-                            within the vibrant tech
-                            community. I look forward to collaborating on projects that push the boundaries of what's
-                            possible
-                            in the digital space.</p>
                     </div>
                 </article>
                 <article class="skillsWrap">
@@ -80,23 +61,6 @@
                         </div>
                     </h3>
                     <div class="bgc bdr5 p-tb5 p-lr10 educationContents" id="educationContents">
-                        <ul>
-                            <li class="mb20">
-                                <strong>Korea National Open University</strong><br />
-                                <span class="">Bachelor's degree - Computer Science</span><br />
-                                <span class="">2020. 02 ~ 2024. 02</span><br />
-                            </li>
-                            <li class="mb20">
-                                <strong>Kyung Hee Cyber University</strong><br>
-                                <span class="">Bachelor's degree - Taxation and Accounting</span><br>
-                                <span class="">2007. 03 ~ 2009. 02</span>
-                            </li>
-                            <li class="mb20">
-                                <strong>Suwon Women's College</strong><br>
-                                <span class="">Associate's degree -Management Information Systems</span><br>
-                                <span class="">2005. 03 ~ 2007. 02</span>
-                            </li>
-                        </ul>
                     </div>
                 </article>
                 <article class="studiesWrap">
@@ -105,24 +69,6 @@
                                 height="24" alt="close icon">Studies</div>
                     </h3>
                     <div class="bgc bdr5 p-tb5 p-lr10 studiesContents" id="studiesContents">
-                        <ul>
-                            <li class="mb20">
-                                <strong>Applied Software Engineering Training Course</strong><br>
-                                <span class="">BitCamp</span><br>
-                                <span class="">2018. 01 ~ 2018. 07</span><br>
-                                <span class="fs083 ">Java / JavaScript / HTML5 / CSS3 / jQuery / Ajax /
-                                    Bootstrap / JSP / Spring / Mybatis /
-                                    Tiles / SiteMesh / Tomcat / Node.js / Oracle / MySQL / Eclipse / Visual Studio /
-                                    EditPlus /
-                                    Git / Source tree</span>
-                            </li>
-                            <li class="mb20">
-                                <strong>Digital Web Design (Web Standards)</strong><br>
-                                <span class="">Green Computer Art Academy</span><br>
-                                <span class="">2015. 11 ~ 2016. 02</span><br>
-                                <span class="fs083 ">PhotoShop / HTML / CSS / JavaScript</span>
-                            </li>
-                        </ul>
                     </div>
                 </article>
                 <article class="connectWrap">
@@ -203,13 +149,15 @@
                                 <ul>
                                     <li class="fs083 " data-skill="HTML CSS Vue">
                                         Performed front-end maintenance on company products (HTML / CSS /
-                                        jQuery / JavaScript)
+                                        jQuery / JavaScript).
                                     </li>
                                     <li class="fs083 ">
-                                        Converted existing company products to Vue.js framework
+                                        Migrated legacy front-end from JavaScript and jQuery to Vue 2, fully redesigning and rebuilding the interface with 100%
+                                        front-end contribution.
                                     </li>
                                     <li class="fs083 ">
-                                        Developed front-end for new company products utilizing Data Q </li>
+                                        Fully developed the front-end of DataQ, a new product focused on data quality management, using Vue 2, Vuetify, and
+                                        ApexCharts. </li>
                                 </ul>
                             </li>
                             <li class="mb20" data-type="developed">

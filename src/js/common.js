@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   // 콘텐츠 가시성을 전환하는 함수
   function toggleContent(key) {
-    console.log("toggleContent");
+    // console.log("toggleContent");
     var _a = contentsMap[key],
       content = _a.content,
       button = _a.button,
@@ -61,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+  document.body.addEventListener("click", function (e) {
+    Object.keys(contentsMap).forEach((key) => {
+      const buttonId = contentsMap[key].button;
+      if (e.target.closest(`#${buttonId}`)) {
+        toggleContent(key);
+      }
+    });
+  });
   // 각 섹션 초기화 함수
   function initializeSections() {
     Object.keys(contentsMap).forEach(function (key) {
@@ -78,6 +86,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  // 언어 변경 버튼 클릭 시 언어 변경
+  const langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    langToggle.addEventListener("change", function () {
+      const lang = langToggle.checked ? "EN" : "KO";
+      applyLang(lang);
+      localStorage.setItem("lang", lang); // 저장
+    });
+
+    // 초기 로딩 시 저장된 언어 있으면 적용
+    const savedLang = localStorage.getItem("lang") || "KO";
+    langToggle.checked = savedLang === "EN";
+    applyLang(savedLang);
+  }
+
   // Copy 버튼 기능
   function showToast(message) {
     var toast = document.getElementById("toast");
@@ -195,47 +218,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   function updateProjectLinks() {
-  var projectLinks = document.querySelectorAll(".projectTitle a");
-  projectLinks.forEach(function (link) {
-    var isMobileFriendly = link.dataset.mobileFriendly === "true";
+    var projectLinks = document.querySelectorAll(".projectTitle a");
+    projectLinks.forEach(function (link) {
+      var isMobileFriendly = link.dataset.mobileFriendly === "true";
 
-    // 작은 화면이고 모바일 친화적이지 않은 사이트인 경우
-    if (window.innerWidth < 768 && !isMobileFriendly) {
-      var img = link.querySelector("img");
-      if (img) {
-        img.src = "./src/images/svg/mobile_off.svg"; // 새 아이콘
-        img.alt = "Notice icon";
+      // 작은 화면이고 모바일 친화적이지 않은 사이트인 경우
+      if (window.innerWidth < 768 && !isMobileFriendly) {
+        var img = link.querySelector("img");
+        if (img) {
+          img.src = "./src/images/svg/mobile_off.svg"; // 새 아이콘
+          img.alt = "Notice icon";
+        }
+        // 기존 이벤트 제거하고 새로운 이벤트 추가
+        link.onclick = function (e) {
+          e.preventDefault(); // 링크 열기 막기
+          showMobileNotice(); // 토스트 메시지 표시
+        };
+      } else {
+        // PC 환경이거나 모바일 친화적인 사이트인 경우
+        link.onclick = function () {
+          window.open(link.href, "_blank");
+        };
       }
-      // 기존 이벤트 제거하고 새로운 이벤트 추가
-      link.onclick = function (e) {
-        e.preventDefault(); // 링크 열기 막기
-        showMobileNotice(); // 토스트 메시지 표시
-      };
-    } else {
-      // PC 환경이거나 모바일 친화적인 사이트인 경우
-      link.onclick = function () {
-        window.open(link.href, "_blank");
-      };
-    }
-  });
-}
-
+    });
+  }
 
   function showMobileNotice() {
-  var toast = document.getElementById("toast");
-  if (toast) {
-    toast.textContent = "This site can only be accessed on desktop devices.";
-    toast.classList.add("show");
-    setTimeout(function () {
-      toast.classList.remove("show");
-    }, 3000);
+    var toast = document.getElementById("toast");
+    if (toast) {
+      toast.textContent = "This site can only be accessed on desktop devices.";
+      toast.classList.add("show");
+      setTimeout(function () {
+        toast.classList.remove("show");
+      }, 3000);
+    }
   }
-}
 
   // 리사이징 이벤트 처리 함수
   function handleResize() {
     initializeSections();
     updateProjectLinks();
+  }
+  // 언어 적용 함수
+  function applyLang(lang) {
+    const aboutText = document.getElementById("aboutContents");
+    const eduText = document.getElementById("educationContents");
+    const studiesText = document.getElementById("studiesContents");
+    if (aboutText) aboutText.innerHTML = content.about[lang];
+    if (eduText) eduText.innerHTML = content.education[lang];
+    if (studiesText) studiesText.innerHTML = content.studies[lang];
+
+    // 버튼 리스너 다시 연결 + 높이 재계산
+    initializeSections();
   }
   // 리사이즈 이벤트 리스너 추가
   window.addEventListener("resize", handleResize);
@@ -245,4 +279,5 @@ document.addEventListener("DOMContentLoaded", function () {
   experienceFilter();
   updateExperienceLabels();
   updateProjectLinks();
+  
 });
