@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
   // 언어 변경 버튼 클릭 시 언어 변경
   const langToggle = document.getElementById("langToggle");
   if (langToggle) {
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const lang = langToggle.checked ? "EN" : "KO";
       applyLang(lang);
       localStorage.setItem("lang", lang); // 저장
+      experienceFilter();
     });
 
     // 초기 로딩 시 저장된 언어 있으면 적용
@@ -162,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+
   function updateCheckboxStates() {
     var dev = expCheckboxes.dev,
       etc = expCheckboxes.etc,
@@ -264,9 +267,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutText = document.getElementById("aboutContents");
     const eduText = document.getElementById("educationContents");
     const studiesText = document.getElementById("studiesContents");
+    const experienceText = document.getElementById("experienceContents");
+    const projectText = document.getElementById("projectsContents");
+
     if (aboutText) aboutText.innerHTML = content.about[lang];
     if (eduText) eduText.innerHTML = content.education[lang];
     if (studiesText) studiesText.innerHTML = content.studies[lang];
+    if (experienceText) experienceText.innerHTML = content.experience[lang];
+    if (projectText) projectText.innerHTML = content.project[lang];
 
     // 버튼 리스너 다시 연결 + 높이 재계산
     initializeSections();
@@ -279,5 +287,4 @@ document.addEventListener("DOMContentLoaded", function () {
   experienceFilter();
   updateExperienceLabels();
   updateProjectLinks();
-  
 });

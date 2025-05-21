@@ -152,7 +152,7 @@ li {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    max-height: max-content;
+    max-height: max-content !important;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
@@ -161,7 +161,6 @@ li {
     display: flex;
     align-items: center;
 }
-
 .experienceContents .workTitle img {
     margin-right: 5px;
 }
@@ -213,6 +212,7 @@ li {
 #noneTypeLiStyle.show {
     opacity: 1;
     transform: translateY(0);
+
 }
 
 .experienceContents>ul>li:last-child,
@@ -267,7 +267,7 @@ li {
 }
 
 .checkboxWrap {
-    margin: 5px 16px;
+    margin: 5px 16px 5px 0px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -277,7 +277,9 @@ li {
 .checkboxWrap input[type="checkbox"] {
     accent-color: #ff5722;
 }
-
+#expDev, #expEtc {
+    margin-left: 20px;
+}
 .projectsContents ul {
     list-style-type: none;
     padding-left: 30px;
