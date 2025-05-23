@@ -1,49 +1,45 @@
 const content = {
   about: {
-    EN: `<p>I am a front-end engineer with a strong foundation in creating dynamic and user-friendly
-                            applications
-                            across a range of
-                            industries. My background includes working with educational partners to develop e-textbook
-                            viewers
-                            and interactive
-                            web-based learning tools tailored to enhance user engagement in online education.
-                            Additionally,
-                            I
-                            have experience at an
-                            ETL tool development company, where I contributed to building a website designed to
-                            streamline
-                            data
-                            migration
-                            configuration, making complex processes accessible to users with varying technical
-                            expertise. My
-                            work is driven by a
-                            commitment to crafting intuitive, high-performing interfaces that simplify complex tasks.
-                        </p>
+    EN: `<p>
+            I am a frontend engineer with a proven track record of building dynamic, user-centric web applications across various industries.  
+            In the education sector, I collaborated with partners to develop digital textbook viewers and interactive learning tools,  
+            contributing to the creation of engaging online learning experiences.  
+            At a company specializing in ETL software, I led the development of web platforms that simplified data migration configurations,  
+            focusing on accessibility for users with diverse technical backgrounds.  
+            I strive to translate complex challenges into intuitive and high-performance UIs—this principle is at the heart of my development philosophy.
+        </p>
 
-                        <p>I believe that every digital interface should feel like an extension of the user's
-                            personal space, designed to be both functional and inspiring.</p>
+        <p>
+            I believe every digital interface should feel like a personal space for the user—functional, meaningful, and inspiring.
+        </p>
 
-                        <p>I have recently returned to South Korea and am currently preparing for the next step in my career.
-I am eager to join a company where I can continue to grow as a front-end engineer and contribute to meaningful, user-centered projects.</p>`,
-    KO: `
-<p>
-저는 다양한 산업 분야에서 동적이고 사용자 친화적인 웹 애플리케이션을 개발해 온 프론트엔드 엔지니어어입니다.  
-그동안 교육 분야 파트너들과 협업하며 전자 교과서 뷰어와 인터랙티브 학습 도구를 개발했고,  
-온라인 교육 환경에서 사용자 참여를 높이기 위한 웹 기반 솔루션 구축에 기여한 경험이 있습니다.  
-또한, ETL 도구 개발 회사에서는 데이터 마이그레이션 설정을 간소화하는 웹사이트를 제작하며,  
-기술 수준이 다양한 사용자도 쉽게 접근할 수 있도록 돕는 데 주력했습니다.  
-복잡한 문제를 직관적이고 성능 높은 UI로 풀어내는 것을 개발 철학으로 삼고 있습니다.
-</p>
+        <p>
+            After returning to Korea from the United States, I am currently exploring new career opportunities.  
+            While continuing to grow as a frontend engineer, I have also been expanding my skill set into the area of technical support.  
+            This new direction stems from a desire to be closer to users, solving real-time issues and delivering impactful solutions that enhance the user experience.  
+            I am looking for a team where I can contribute to meaningful, user-focused projects while bridging development with support.
+        </p>`,
+    KO: `<p>
+            저는 다양한 산업 분야에서 동적이고 사용자 친화적인 웹 애플리케이션을 개발해 온 프런트엔드 엔지니어입니다.  
+            그동안 교육 분야 파트너들과 협업하며 전자 교과서 뷰어와 인터랙티브 학습 도구를 개발했고,  
+            온라인 교육 환경에서 사용자 참여를 높이기 위한 웹 기반 솔루션 구축에 기여한 경험이 있습니다.  
+            또한, ETL 도구 개발 회사에서는 데이터 마이그레이션 설정을 간소화하는 웹사이트를 제작하며,  
+            기술 수준이 다양한 사용자도 쉽게 접근할 수 있도록 돕는 데 주력했습니다.  
+            복잡한 문제를 직관적이고 성능 높은 UI로 풀어내는 것을 개발 철학으로 삼고 있습니다.
+        </p>
 
-<p>
-모든 디지털 인터페이스는 사용자의 개인적인 공간처럼 느껴져야 하며,  
-기능성과 영감을 모두 담아야 한다고 믿습니다.
-</p>
+        <p>
+            저는 모든 디지털 인터페이스가 사용자의 개인적인 공간처럼 느껴져야 하며,  
+            기능성과 영감을 모두 담아야 한다고 믿습니다.
+        </p>
 
-<p>
-최근 미국에서 한국으로 귀국하여 새로운 커리어를 준비 중입니다.  
-프론트엔드 엔지니어로서 더 성장하고, 사용자 중심의 의미 있는 프로젝트에 기여할 수 있는 회사를 찾고 있습니다.
-</p>    `,
+        <p>
+            최근 미국에서 한국으로 귀국하여 새로운 커리어를 준비 중입니다.  
+            프런트엔드 엔지니어로서 계속 성장하는 동시에, 최근에는 기술 지원 분야에도 관심을 갖고 도전하고 있습니다.  
+            기술 지원은 사용자와 더 가까이에서 문제를 해결하고, 실질적인 도움을 줄 수 있는 분야라는 점에서 큰 매력을 느끼고 있습니다.  
+            앞으로는 사용자 중심의 프로젝트에 기여하면서, 개발과 지원의 경계를 넘나드는 역할을 해내고 싶습니다.
+        </p>
+`,
   },
   education: {
     EN: `
@@ -388,14 +384,14 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                                 <span class="date-range">2022. 06 ~ 2024. 06</span><br />
                                 <ul>
                                     <li class="fs083 " data-skill="HTML CSS Vue">
-                                        회사 제품의 프론트엔드 유지보수를 담당 (HTML / CSS /
+                                        회사 제품의 프런트엔드 유지보수를 담당 (HTML / CSS /
                                         jQuery / JavaScript).
                                     </li>
                                     <li class="fs083 ">
-                                        레거시 프론트엔드를 JavaScript와 jQuery에서 Vue 2로 마이그레이션하며 UI를 전면 재설계 및 재구현 (프론트 단독 작업)
+                                        레거시 프런트엔드를 JavaScript와 jQuery에서 Vue 2로 마이그레이션하며 UI를 전면 재설계 및 재구현 (프런트 단독 작업)
                                     </li>
                                     <li class="fs083 ">
-                                        데이터 품질 관리 신제품 DataQ의 프론트엔드를 Vue 2, Vuetify, ApexCharts로 전체 개발 </li>
+                                        데이터 품질 관리 신제품 DataQ의 프런트엔드를 Vue 2, Vuetify, ApexCharts로 전체 개발 </li>
                                 </ul>
                             </li>
                             <li class="mb20" data-type="developed">
@@ -583,243 +579,179 @@ I am eager to join a company where I can continue to grow as a front-end enginee
   },
   project: {
     EN: `<ul>
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/imgtowebp.png" alt="imgtowebp project main page image" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Images to WEBP</strong>
-                                                <a href="https://imgtowebp.honeybam.com/" target="_blank"
-                                                    aria-label="Open simple image-to-WEBP conversion tool website" rel="noopener noreferrer"
-                                                    data-mobile-friendly="true">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
-                                                </a>
-                                            </li>
-                                            <li class="mb20">
-                                                A simple image-to-WEBP conversion tool built to address a personal need. This project provided an
-                                                excellent opportunity to practice and enhance my skills in React development.
-                                            </li>
-                                            <li class="fs083">
-                                                Technologies: HTML, CSS, React, JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/imgtowebp.png" alt="imgtowebp project main page image" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Images to WEBP</strong>
+                        <a href="https://imgtowebp.honeybam.com/" target="_blank"
+                        aria-label="Open Images to WEBP site" rel="noopener noreferrer" data-mobile-friendly="true">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        A simple image-to-WEBP conversion tool developed to meet a personal need. It provided a great opportunity to practice and enhance my skills in React development.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, React, JavaScript
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Narae Data M</strong> <a href="/" target="_blank" aria-label="Open 
-                                                    Data M" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                NaraeData
-                                            </li>
-                                            <li class="fs083 ">
-                                                HTML / CSS / Vue / JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/naraeDataM.png" alt="No image available" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Narae Data M</strong>
+                    </li>
+                    <li class="mb20">
+                        Narae DataM is a specialized ETL software that extracts, transforms, and loads data across various DBMS platforms. I was solely responsible for the entire frontend development of the product.
+                        I also developed the frontend for a new data quality management tool called DataQ, as well as the internal intranet site used by the tech support team, using Vue 2 and Vuetify.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, VueJS, Vuetify, JavaScript
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Data Q</strong> <a href="/" target="_blank" aria-label="Open 
-                                                    Data Q" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                NaraeData
-                                            </li>
-                                            <li class="fs083 ">
-                                                HTML / CSS / Vue / JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/Textbook Browser Viewer.png" alt="No image available" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Textbook Browser Viewer</strong>
+                        <a href="https://ineeth.com/studyToolsSample/" target="_blank"
+                        aria-label="Open Textbook Browser Viewer" rel="noopener noreferrer" data-mobile-friendly="false">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        An e-book viewer developed in response to a partner company's request during my time at Boin Information Technology. The content is copyright-protected and accessible only to partner members.
+                        The linked page provides sample previews of the study tools.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, JavaScript, jQuery
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Narae Data
-                                                    Intranet</strong> <a href="/" target="_blank" aria-label="Open Narae Data
-                                                    Intranet" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                NaraeData
-                                            </li>
-                                            <li class="fs083 ">
-                                                HTML / CSS / Vue / JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/none.png" alt="No image available" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>E-Book Viewer</strong>
+                        <a href="/" target="_blank" aria-label="Open sample E-Book Viewer website"
+                        rel="noopener noreferrer" data-mobile-friendly="false">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        Developed an e-book viewer for a government submission project during my time at Boin Information Technology. The software was distributed on CD, and only a limited sample was implemented due to copyright constraints.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, JavaScript, jQuery
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Textbook Browser Viewer</strong> <a
-                                                    href="https://ineeth.com/studyToolsSample/" target="_blank" aria-label="Open Textbook Browser Viewer" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                This is an E-book Viewer for textbooks, developed at Boin IT upon a
-                                                request from a partner company. It is a service
-                                                available only to members of the partner company and is copyrighted. I
-                                                have implemented a sample page of some
-                                                educational tools, which you can find through the link provided.
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/hansarang.png" alt="Hansarang hospital project main page image" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Hansarang Geriatric Hospital Website</strong>
+                        <a href="http://www.myhansarang.co.kr" target="_blank"
+                        aria-label="Open Hansarang hospital site" rel="noopener noreferrer" data-mobile-friendly="true">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        A full-stack project where I was responsible for both design and development. Please note that the current live version may include updates or additional features implemented by other developers.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, JavaScript, jQuery
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                                            </li>
-                                            <li class="fs083 ">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/flowerShop.png" alt="Flower shop web design" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Flower Shop</strong>
+                        <a href="https://ineeth.com/flowershop" target="_blank"
+                        aria-label="Open Flower Shop site" rel="noopener noreferrer" data-mobile-friendly="false">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        Created during a web design course, this project experimented with horizontal scroll layouts. It focused on applying creative design techniques and refining frontend skills.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, JavaScript, jQuery
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
 
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>E-Book Viewer</strong>
-                                                <a href="/" target="_blank" aria-label="Open sample E-Book Viewer website" rel="noopener noreferrer"
-                                                    data-mobile-friendly="false">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
-                                                </a>
-                                            </li>
-                                            <li class="mb20">
-                                                This E-Book Viewer was developed during my tenure at Boin IT in response to a partner company's
-                                                request. It was created for submission to a government agency and distributed on CD. Due to
-                                                copyright restrictions, only a sample page has been implemented and linked here.
-                                            </li>
-                                            <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/hansarang.png" alt="Hansarang hospital project main page image" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Hansarang Hospital Website</strong>
-                                                <a href="http://www.myhansarang.co.kr" target="_blank" aria-label="Open Hansarang hospital website"
-                                                    rel="noopener noreferrer" data-mobile-friendly="true">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
-                                                </a>
-                                            </li>
-                                            <li class="mb20">
-                                                This website was developed in early 2016 during my tenure at BestHappyLine. As part of a team
-                                                project, I contributed to building its core features and user interface. Post my departure, the site
-                                                has been maintained and possibly further developed by others.
-                                            </li>
-                                            <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/flowerShop.png" alt="Flower shop website design" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Flower Shop</strong>
-                                                <a href="https://ineeth.com/flowershop" target="_blank" aria-label="Open Flower Shop website"
-                                                    rel="noopener noreferrer" data-mobile-friendly="false">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
-                                                </a>
-                                            </li>
-                                            <li class="mb20">
-                                                This project was developed during a web design training course to experiment with horizontal
-                                                scrolling layouts. The primary goal was to explore creative design techniques and refine front-end
-                                                development skills.
-                                            </li>
-                                            <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/aladin.png" alt="Corporate Website Replica for Aladin" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Corporate Website Replica for Aladin</strong>
-                                                <a href="https://ineeth.com/aladin_site/" target="_blank" aria-label="Open Aladin website"
-                                                    rel="noopener noreferrer" data-mobile-friendly="true">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
-                                                </a>
-                                            </li>
-                                            <li class="mb20">
-                                                This project is a replica of a corporate website, developed during a training course as a practice
-                                                exercise. The main goal was to enhance skills in designing professional layouts and implementing
-                                                responsive web design using media queries.
-                                            </li>
-                                            <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery, Media Queries, Responsive Design
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-
-                        </ul>`,
+            <li class="mb20">
+                <div class="projectListWrap">
+                <div class="projectImg">
+                    <img src="./src/images/img/aladin.png" alt="Aladin company virtual website" />
+                </div>
+                <div class="projectDescript">
+                    <ul>
+                    <li class="mb20 projectTitle">
+                        <strong>Aladin Company Virtual Website</strong>
+                        <a href="https://ineeth.com/aladin_site/" target="_blank"
+                        aria-label="Open Aladin virtual website" rel="noopener noreferrer" data-mobile-friendly="true">
+                        <img src="./src/images/svg/open.svg" alt="Open website" />
+                        </a>
+                    </li>
+                    <li class="mb20">
+                        A practice project created during a web design course. This mock corporate website emphasizes clean layout design and responsive UI using media queries.
+                    </li>
+                    <li class="fs083">
+                        Tech Stack: HTML, CSS, JavaScript, jQuery, Media Queries, Responsive Design
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            </ul>`,
     KO: `<ul>
                             <li class="mb20">
                                 <div class="projectListWrap">
@@ -855,16 +787,16 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                                     <div class="projectDescript">
                                         <ul>
                                             <li class="mb20 projectTitle">
-                                                <strong>Narae Data M </strong> <a href="/" target="_blank" aria-label="Data M 열기" 
-                                                rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="웹사이트 열기" /> </a>
+                                                <strong>Narae Data M </strong>
                                             </li>
                                             <li class="mb20">
                                                 나래 데이터엠”(Narae DataM)은 다양한 소스(DBMS 등)로부터 데이터를 추출, 변환하여 타겟(DBMS 등)에 데이터를 적재하는 전문 데이터 이관 소프트웨어입니다.
-                                                해당 소프트웨어의 프런트엔드 개발 100%를 담당했습니다.
+                                                해당 소프트웨어의 프런트엔드 개발 100%를 담당했습니다. 
+                                                그밖에 데이터의 퀄리티를 관리하는 신제품 DataQ의 프런트엔드와 
+                                                기술 지원팀에서 사용하는 나래데이터 인트라넷 사이트도 Vue 2, Vuetify로 전체 개발했습니다.
                                             </li>
                                             <li class="fs083 ">
-                                                HTML / CSS / VueJS / JavaScript
+                                                사용 기술: HTML / CSS / VueJS / Vuetify / JavaScript
                                             </li>
                                         </ul>
                                     </div>
@@ -874,54 +806,7 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                             <li class="mb20">
                                 <div class="projectListWrap">
                                     <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Data Q</strong> <a href="/" target="_blank" aria-label="Open 
-                                                    Data Q" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                NaraeData
-                                            </li>
-                                            <li class="fs083 ">
-                                                HTML / CSS / Vue / JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
-                                    </div>
-                                    <div class="projectDescript">
-                                        <ul>
-                                            <li class="mb20 projectTitle">
-                                                <strong>Narae Data
-                                                    Intranet</strong> <a href="/" target="_blank" aria-label="Open Narae Data
-                                                    Intranet" rel="noopener noreferrer" data-mobile-friendly="false"> <img
-                                                        src="./src/images/svg/open.svg" alt="open web site" /> </a>
-                                            </li>
-                                            <li class="mb20">
-                                                NaraeData
-                                            </li>
-                                            <li class="fs083 ">
-                                                HTML / CSS / Vue / JavaScript
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="mb20">
-                                <div class="projectListWrap">
-                                    <div class="projectImg">
-                                        <img src="./src/images/img/none.png" alt="No image available" />
+                                        <img src="./src/images/img/Textbook Browser Viewer.png" alt="No image available" />
                                     </div>
                                     <div class="projectDescript">
                                         <ul>
@@ -931,15 +816,11 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                                                         src="./src/images/svg/open.svg" alt="open web site" /> </a>
                                             </li>
                                             <li class="mb20">
-                                                This is an E-book Viewer for textbooks, developed at Boin IT upon a
-                                                request from a partner company. It is a service
-                                                available only to members of the partner company and is copyrighted. I
-                                                have implemented a sample page of some
-                                                educational tools, which you can find through the link provided.
-
+                                                보인정보기술에서 파트너사의 요청으로 개발한 전자책 뷰어입니다. 파트너사 회원만 사용할 수 있으며 저작권이 보호된 콘텐츠입니다.
+                                                제공된 링크에서는 일부 교육 도구의 샘플 페이지를 확인하실 수 있습니다.
                                             </li>
                                             <li class="fs083 ">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
+                                                사용 기술: HTML, CSS, JavaScript, jQuery
                                             </li>
                                         </ul>
                                     </div>
@@ -961,18 +842,16 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                                                 </a>
                                             </li>
                                             <li class="mb20">
-                                                This E-Book Viewer was developed during my tenure at Boin IT in response to a partner company's
-                                                request. It was created for submission to a government agency and distributed on CD. Due to
-                                                copyright restrictions, only a sample page has been implemented and linked here.
+                                                보인정보기술 재직 중 파트너사의 요청에 따라 개발한 뷰어입니다. 정부 기관 제출용으로 제작되어 CD로 배포되었으며,
+                                                저작권 문제로 샘플 페이지만 구현되어 있습니다.
                                             </li>
                                             <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
+                                                사용 기술: HTML, CSS, JavaScript, jQuery
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-
 
                             <li class="mb20">
                                 <div class="projectListWrap">
@@ -982,19 +861,18 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                                     <div class="projectDescript">
                                         <ul>
                                             <li class="mb20 projectTitle">
-                                                <strong>Hansarang Hospital Website</strong>
-                                                <a href="http://www.myhansarang.co.kr" target="_blank" aria-label="Open Hansarang hospital website"
+                                                <strong>한사랑 요양병원 홈페이지</strong>
+                                                <a href="http://www.myhansarang.co.kr" target="_blank" aria-label="한사랑 요양병원 웹사이트 열기"
                                                     rel="noopener noreferrer" data-mobile-friendly="true">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
+                                                    <img src="./src/images/svg/open.svg" alt="웹사이트 열기" />
                                                 </a>
                                             </li>
                                             <li class="mb20">
-                                                This website was developed in early 2016 during my tenure at BestHappyLine. As part of a team
-                                                project, I contributed to building its core features and user interface. Post my departure, the site
-                                                has been maintained and possibly further developed by others.
+                                                실제 업무에서 단독으로 퍼블리싱, 개발까지 전반을 담당한 프로젝트입니다.
+                                                이후 추가 기능이나 페이지는 타 개발자에 의해 구현되었을 수 있으며, 현재 사이트는 당시 버전과 다를 수 있습니다.
                                             </li>
                                             <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
+                                                사용 기술: HTML, CSS, JavaScript, jQuery
                                             </li>
                                         </ul>
                                     </div>
@@ -1005,24 +883,23 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                             <li class="mb20">
                                 <div class="projectListWrap">
                                     <div class="projectImg">
-                                        <img src="./src/images/img/flowerShop.png" alt="Flower shop website design" />
+                                        <img src="./src/images/img/flowerShop.png" alt="꽃집 웹사이트 디자인" />
                                     </div>
                                     <div class="projectDescript">
                                         <ul>
                                             <li class="mb20 projectTitle">
                                                 <strong>Flower Shop</strong>
-                                                <a href="https://ineeth.com/flowershop" target="_blank" aria-label="Open Flower Shop website"
+                                                <a href="https://ineeth.com/flowershop" target="_blank" aria-label="Flower Shop 열기"
                                                     rel="noopener noreferrer" data-mobile-friendly="false">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
+                                                    <img src="./src/images/svg/open.svg" alt="웹사이트 열기" />
                                                 </a>
                                             </li>
                                             <li class="mb20">
-                                                This project was developed during a web design training course to experiment with horizontal
-                                                scrolling layouts. The primary goal was to explore creative design techniques and refine front-end
-                                                development skills.
+                                                웹디자인 교육 과정 중 수평 스크롤 레이아웃을 실험하기 위해 제작한 프로젝트입니다.
+                                                창의적인 디자인 기법을 실습하고 프론트엔드 기술을 다듬는 데 중점을 두었습니다.
                                             </li>
                                             <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery
+                                                사용 기술: HTML, CSS, JavaScript, jQuery
                                             </li>
                                         </ul>
                                     </div>
@@ -1032,24 +909,23 @@ I am eager to join a company where I can continue to grow as a front-end enginee
                             <li class="mb20">
                                 <div class="projectListWrap">
                                     <div class="projectImg">
-                                        <img src="./src/images/img/aladin.png" alt="Corporate Website Replica for Aladin" />
+                                        <img src="./src/images/img/aladin.png" alt="알라딘 기업 가상 웹사이트" />
                                     </div>
                                     <div class="projectDescript">
                                         <ul>
                                             <li class="mb20 projectTitle">
-                                                <strong>Corporate Website Replica for Aladin</strong>
-                                                <a href="https://ineeth.com/aladin_site/" target="_blank" aria-label="Open Aladin website"
+                                                <strong>알라딘 기업 가상 사이트</strong>
+                                                <a href="https://ineeth.com/aladin_site/" target="_blank" aria-label="알라딘 가상상 웹사이트 열기"
                                                     rel="noopener noreferrer" data-mobile-friendly="true">
-                                                    <img src="./src/images/svg/open.svg" alt="Open website" />
+                                                    <img src="./src/images/svg/open.svg" alt="웹사이트 열기" />
                                                 </a>
                                             </li>
                                             <li class="mb20">
-                                                This project is a replica of a corporate website, developed during a training course as a practice
-                                                exercise. The main goal was to enhance skills in designing professional layouts and implementing
-                                                responsive web design using media queries.
+                                                웹디자인 교육 중 실습용으로 제작한 기업 가상 웹사이트 프로젝트입니다. 전문적인 레이아웃 구성 및 반응형 웹 디자인을
+                        연습하고자 미디어 쿼리를 활용해 제작하였습니다.
                                             </li>
                                             <li class="fs083">
-                                                Technologies: HTML, CSS, JavaScript, jQuery, Media Queries, Responsive Design
+                                                사용 기술: HTML, CSS, JavaScript, jQuery, Media Queries, Responsive Design
                                             </li>
                                         </ul>
                                     </div>
