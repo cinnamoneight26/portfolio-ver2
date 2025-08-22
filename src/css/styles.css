@@ -212,7 +212,6 @@ li {
 #noneTypeLiStyle.show {
     opacity: 1;
     transform: translateY(0);
-
 }
 
 .experienceContents>ul>li:last-child,
@@ -378,7 +377,19 @@ input:checked+.slider::before {
     content: "EN";
     font-size: 0.75rem;
 }
-
+/* 스크롤 바 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
 /* 태블릿용 CSS */
 @media all and (min-width:768px) {}
 
