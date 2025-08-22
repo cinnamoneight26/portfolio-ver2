@@ -377,22 +377,21 @@ const content = {
                                 </div>
                             </li>
                             <li class="mb20" data-type="etc">
-    <div class="workTitle">
-        <img src="./src/images/svg/supportAgent.svg" width="24" height="24" alt="support agent icon">
-        <strong>기술지원 엔지니어</strong><br />
-    </div>
-    <span class="">콘센트릭스서비스코리아</span><br />
-    <span class="date-range">2025. 06 ~ 현재</span><br />
-    <ul>
-        <li class="fs083 ">
-            사용자 문의에 대응하고, 발생한 문제를 실시간으로 해결합니다.
-        </li>
-        <li class="fs083 ">
-            내부 팀과 협력하여 복잡한 문제를 해결하고, 서비스가 원활하게 운영되도록 지원합니다.
-        </li>
-    </ul>
-</li>
-
+                                <div class="workTitle">
+                                    <img src="./src/images/svg/supportAgent.svg" width="24" height="24" alt="support agent icon">
+                                    <strong>기술지원 엔지니어</strong><br />
+                                </div>
+                                <span class="">콘센트릭스서비스코리아</span><br />
+                                <span class="date-range">2025. 06 ~ 현재</span><br />
+                                <ul>
+                                    <li class="fs083 ">
+                                        사용자 문의 대응, 발생한 문제를 실시간으로 해결.
+                                    </li>
+                                    <li class="fs083 ">
+                                        내부 팀과 협력하여 복잡한 문제를 해결하여 서비스 운영 지원.
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="mb20" data-type="developed">
                                 <div class="workTitle">
                                     <img src="./src/images/svg/code.svg" width="24" height="24" alt="code icon">
