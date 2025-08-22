@@ -118,6 +118,23 @@ const content = {
                                         That’s okay. Maybe the best experience is the one we create together.✨<br />
                                 </div>
                             </li>
+                            <li class="mb20" data-type="etc">
+    <div class="workTitle">
+        <img src="./src/images/svg/supportAgent.svg" width="24" height="24" alt="support agent icon">
+        <strong>Technical Support Engineer</strong><br />
+    </div>
+    <span class="">Concentrix Service Korea</span><br />
+    <span class="date-range">2025. 06 ~ Present</span><br />
+    <ul>
+        <li class="fs083 ">
+            Provide technical support by responding to user inquiries and troubleshooting issues in real time.
+        </li>
+        <li class="fs083 ">
+            Collaborate with internal teams to resolve complex problems and ensure smooth service operations.
+        </li>
+    </ul>
+</li>
+
                             <li class="mb20" data-type="developed">
                                 <div class="workTitle">
                                     <img src="./src/images/svg/code.svg" width="24" height="24" alt="code icon">
@@ -359,6 +376,23 @@ const content = {
                                         괜찮아요. 어쩌면 가장 멋진 경력은 우리가 함께 만들어갈 경험일지도 모르니까요. ✨<br />
                                 </div>
                             </li>
+                            <li class="mb20" data-type="etc">
+    <div class="workTitle">
+        <img src="./src/images/svg/supportAgent.svg" width="24" height="24" alt="support agent icon">
+        <strong>기술지원 엔지니어</strong><br />
+    </div>
+    <span class="">콘센트릭스서비스코리아</span><br />
+    <span class="date-range">2025. 06 ~ 현재</span><br />
+    <ul>
+        <li class="fs083 ">
+            사용자 문의에 대응하고, 발생한 문제를 실시간으로 해결합니다.
+        </li>
+        <li class="fs083 ">
+            내부 팀과 협력하여 복잡한 문제를 해결하고, 서비스가 원활하게 운영되도록 지원합니다.
+        </li>
+    </ul>
+</li>
+
                             <li class="mb20" data-type="developed">
                                 <div class="workTitle">
                                     <img src="./src/images/svg/code.svg" width="24" height="24" alt="code icon">
