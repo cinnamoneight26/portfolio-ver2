@@ -1,44 +1,28 @@
 const content = {
   about: {
     EN: `<p>
-            I am a frontend engineer with a proven track record of building dynamic, user-centric web applications across various industries.  
-            In the education sector, I collaborated with partners to develop digital textbook viewers and interactive learning tools,  
-            contributing to the creation of engaging online learning experiences.  
-            At a company specializing in ETL software, I led the development of web platforms that simplified data migration configurations,  
-            focusing on accessibility for users with diverse technical backgrounds.  
-            I strive to translate complex challenges into intuitive and high-performance UIs—this principle is at the heart of my development philosophy.
-        </p>
+    Hello, I have worked in a game company’s customer service center as well as in backend and frontend engineering.  
+    Currently, I am a Technical Support Engineer at Concentrix Service Korea.  
+    I chose this role because I find it rewarding to solve user problems and help services run smoothly.  
+    I also enjoy creating things, so even after moving away from a developer position, I continue frontend development as a hobby.
+</p>
 
-        <p>
-            I believe every digital interface should feel like a personal space for the user—functional, meaningful, and inspiring.
-        </p>
-
-        <p>
-            After returning to Korea from the United States, I am currently exploring new career opportunities.  
-            While continuing to grow as a frontend engineer, I have also been expanding my skill set into the area of technical support.  
-            This new direction stems from a desire to be closer to users, solving real-time issues and delivering impactful solutions that enhance the user experience.  
-            I am looking for a team where I can contribute to meaningful, user-focused projects while bridging development with support.
-        </p>`,
+<p>
+    I enjoy the process of solving problems that people face and value the learning that comes with it.  
+    My goal is to keep growing my skills in both technology and support, so that I can provide support that truly helps users.
+</p>
+`,
     KO: `<p>
-            저는 다양한 산업 분야에서 동적이고 사용자 친화적인 웹 애플리케이션을 개발해 온 프런트엔드 엔지니어입니다.  
-            그동안 교육 분야 파트너들과 협업하며 전자 교과서 뷰어와 인터랙티브 학습 도구를 개발했고,  
-            온라인 교육 환경에서 사용자 참여를 높이기 위한 웹 기반 솔루션 구축에 기여한 경험이 있습니다.  
-            또한, ETL 도구 개발 회사에서는 데이터 마이그레이션 설정을 간소화하는 웹사이트를 제작하며,  
-            기술 수준이 다양한 사용자도 쉽게 접근할 수 있도록 돕는 데 주력했습니다.  
-            복잡한 문제를 직관적이고 성능 높은 UI로 풀어내는 것을 개발 철학으로 삼고 있습니다.
-        </p>
+    안녕하세요. 저는 게임 회사 고객센터와 백엔드, 프론트엔드 엔지니어를 거쳐  
+    현재는 콘센트릭스서비스코리아에서 기술지원 엔지니어로 일하고 있습니다.  
+    사용자가 겪는 문제를 해결하고 서비스가 원활하게 운영되도록 돕는 일에 큰 보람을 느끼며 이 직무를 선택했습니다.  
+    개발을 직접 만드는 일도 좋아해서, 지금도 취미로 프론트엔드 개발을 이어가고 있습니다.
+</p>
 
-        <p>
-            저는 모든 디지털 인터페이스가 사용자의 개인적인 공간처럼 느껴져야 하며,  
-            기능성과 영감을 모두 담아야 한다고 믿습니다.
-        </p>
-
-        <p>
-            최근 미국에서 한국으로 귀국하여 새로운 커리어를 준비 중입니다.  
-            프런트엔드 엔지니어로서 계속 성장하는 동시에, 최근에는 기술 지원 분야에도 관심을 갖고 도전하고 있습니다.  
-            기술 지원은 사용자와 더 가까이에서 문제를 해결하고, 실질적인 도움을 줄 수 있는 분야라는 점에서 큰 매력을 느끼고 있습니다.  
-            앞으로는 사용자 중심의 프로젝트에 기여하면서, 개발과 지원의 경계를 넘나드는 역할을 해내고 싶습니다.
-        </p>
+<p>
+    저는 사람들이 겪는 문제를 해결하는 과정을 즐기고, 그 안에서 배우는 것을 소중하게 생각합니다.  
+    앞으로도 기술과 지원 역량을 꾸준히 키워서, 사용자에게 실제로 도움이 되는 지원을 제공하고 싶습니다.
+</p>
 `,
   },
   education: {
