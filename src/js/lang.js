@@ -1,7 +1,7 @@
 const content = {
   about: {
     EN: `<p>
-    Hello, I have worked in a game company’s customer service center as well as in backend and frontend engineering.  
+    I have worked in a game company’s customer service center as well as in backend and frontend engineering.  
     Currently, I am a Technical Support Engineer at Concentrix Service Korea.  
     I chose this role because I find it rewarding to solve user problems and help services run smoothly.  
     I also enjoy creating things, so even after moving away from a developer position, I continue frontend development as a hobby.
@@ -13,7 +13,7 @@ const content = {
 </p>
 `,
     KO: `<p>
-    안녕하세요. 저는 게임 회사 고객센터와 백엔드, 프론트엔드 엔지니어를 거쳐  
+    저는 게임 회사 고객센터와 백엔드, 프론트엔드 엔지니어를 거쳐  
     현재는 콘센트릭스서비스코리아에서 기술지원 엔지니어로 일하고 있습니다.  
     사용자가 겪는 문제를 해결하고 서비스가 원활하게 운영되도록 돕는 일에 큰 보람을 느끼며 이 직무를 선택했습니다.  
     개발을 직접 만드는 일도 좋아해서, 지금도 취미로 프론트엔드 개발을 이어가고 있습니다.
