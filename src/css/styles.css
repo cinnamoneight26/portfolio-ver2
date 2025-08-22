@@ -152,9 +152,10 @@ li {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    max-height: max-content !important;
+    max-height: none;
+    /* max-height: max-content !important; */
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .experienceContents .workTitle {

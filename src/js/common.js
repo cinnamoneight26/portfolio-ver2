@@ -56,33 +56,33 @@ document.addEventListener("DOMContentLoaded", function () {
           : "./src/images/svg/circle_down.svg";
         // alt 속성 업데이트
         buttonImage.alt = contentsMap[key].isOpen ? "close icon" : "open icon";
-        // 콘솔로 alt 값 디버깅 (문제 파악용)
-        console.log("Updated alt:", buttonImage.alt);
       }
     }
   }
-  document.body.addEventListener("click", function (e) {
-    Object.keys(contentsMap).forEach((key) => {
-      const buttonId = contentsMap[key].button;
-      if (e.target.closest(`#${buttonId}`)) {
-        toggleContent(key);
-      }
-    });
-  });
+  // document.body.addEventListener("click", function (e) {
+  //   Object.keys(contentsMap).forEach((key) => {
+  //     const buttonId = contentsMap[key].button;
+  //     if (e.target.closest(`#${buttonId}`)) {
+  //       toggleContent(key);
+  //     }
+  //   });
+  // });
   // 각 섹션 초기화 함수
   function initializeSections() {
     Object.keys(contentsMap).forEach(function (key) {
       var contentElement = document.getElementById(contentsMap[key].content);
       var buttonElement = document.getElementById(contentsMap[key].button);
+
       if (contentElement) {
         contentElement.style.maxHeight = contentsMap[key].isOpen
-          ? "".concat(contentElement.scrollHeight, "px")
+          ? `${contentElement.scrollHeight}px`
           : "0";
       }
+
       if (buttonElement) {
-        buttonElement.addEventListener("click", function () {
-          return toggleContent(key);
-        });
+        buttonElement.onclick = function () {
+          toggleContent(key);
+        };
       }
     });
   }
